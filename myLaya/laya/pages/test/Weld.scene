@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":2,
-    "selecteID":6,
+    "selectedBox":14,
+    "selecteID":18,
     "searchKey":"Scene",
     "props":{"width":640,"sceneColor":"#000000","height":1136},
     "nodeParent":-1,
-    "maxID":8,
+    "maxID":23,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -18,7 +18,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,ground",
-            "props":{"y":699,"x":-1,"width":635,"texture":"test/block.png","name":"ground","height":21},
+            "props":{"y":859,"x":0,"width":635,"texture":"test/block.png","name":"ground","height":21},
             "nodeParent":2,
             "label":"ground",
             "isOpen":null,
@@ -62,29 +62,227 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,top",
-            "props":{"y":558,"x":277,"width":100,"texture":"test/t1.png","rotation":0,"name":"top","height":100},
+            "props":{"y":718,"x":278,"width":100,"texture":"test/t1.png","rotation":0,"name":"top","height":100},
             "nodeParent":2,
             "label":"top",
-            "isDirectory":false,
+            "isOpen":false,
+            "isDirectory":true,
             "isAniNode":true,
-            "hasChild":false,
+            "hasChild":true,
             "compId":7,
             "child":[
-                ]
+                {
+                    "type":"PolygonCollider",
+                    "switchAble":true,
+                    "searchKey":"PolygonCollider",
+                    "removeAble":true,
+                    "props":{"points":"50,0,100,100,0,100"},
+                    "nodeParent":7,
+                    "label":"PolygonCollider",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":8,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"RigidBody",
+                    "switchAble":true,
+                    "searchKey":"RigidBody",
+                    "removeAble":true,
+                    "props":{},
+                    "nodeParent":7,
+                    "label":"RigidBody",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":9,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"WeldJoint",
+                    "switchAble":true,
+                    "searchKey":"WeldJoint",
+                    "removeAble":true,
+                    "props":{"otherBody":"@node:11","anchor":[51,5]},
+                    "nodeParent":7,
+                    "label":"WeldJoint",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":12,
+                    "child":[
+                        ]
+                }]
         },
         {
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,bottom",
-            "props":{"y":484,"x":250,"texture":"test/tra.png","name":"bottom"},
+            "props":{"y":644,"x":251,"texture":"test/tra.png","name":"bottom"},
             "nodeParent":2,
             "label":"bottom",
-            "isDirectory":false,
+            "isOpen":false,
+            "isDirectory":true,
             "isAniNode":true,
-            "hasChild":false,
+            "hasChild":true,
             "compId":6,
             "child":[
-                ]
+                {
+                    "type":"PolygonCollider",
+                    "switchAble":true,
+                    "searchKey":"PolygonCollider",
+                    "removeAble":true,
+                    "props":{"points":"50,0,107,-1,154,83,-1,82"},
+                    "nodeParent":6,
+                    "label":"PolygonCollider",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":10,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"RigidBody",
+                    "switchAble":true,
+                    "searchKey":"RigidBody",
+                    "removeAble":true,
+                    "props":{},
+                    "nodeParent":6,
+                    "label":"RigidBody",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":11,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"MouseJoint",
+                    "switchAble":true,
+                    "searchKey":"MouseJoint",
+                    "removeAble":true,
+                    "props":{},
+                    "nodeParent":6,
+                    "label":"MouseJoint",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":13,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,c",
+            "props":{"y":500,"x":277,"texture":"test/c1.png","name":"c"},
+            "nodeParent":2,
+            "label":"c",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":14,
+            "child":[
+                {
+                    "x":30,
+                    "type":"CircleCollider",
+                    "switchAble":true,
+                    "searchKey":"CircleCollider",
+                    "removeAble":true,
+                    "props":{"radius":50},
+                    "nodeParent":14,
+                    "label":"CircleCollider",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":16,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"RigidBody",
+                    "switchAble":true,
+                    "searchKey":"RigidBody",
+                    "removeAble":true,
+                    "props":{"y":0,"x":0,"width":1,"rotation":41,"height":1},
+                    "nodeParent":14,
+                    "label":"RigidBody",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":17,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"RopeJoint",
+                    "switchAble":true,
+                    "searchKey":"RopeJoint",
+                    "removeAble":true,
+                    "props":{"y":-74,"x":-50.000000000000114,"selfAnchor":[50,-181],"otherBody":"@node:22","otherAnchor":[24,222],"maxLength":500},
+                    "nodeParent":14,
+                    "label":"RopeJoint",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":18,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,r",
+            "props":{"y":300,"x":303,"width":49,"texture":"test/block.png","name":"r","height":49},
+            "nodeParent":2,
+            "label":"r",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":15,
+            "child":[
+                {
+                    "x":30,
+                    "type":"BoxCollider",
+                    "switchAble":true,
+                    "searchKey":"BoxCollider",
+                    "removeAble":true,
+                    "props":{"width":49,"height":49},
+                    "nodeParent":15,
+                    "label":"BoxCollider",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":21,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"RigidBody",
+                    "switchAble":true,
+                    "searchKey":"RigidBody",
+                    "removeAble":true,
+                    "props":{"type":"kinematic"},
+                    "nodeParent":15,
+                    "label":"RigidBody",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":22,
+                    "child":[
+                        ]
+                }]
         }],
     "animations":[
         {

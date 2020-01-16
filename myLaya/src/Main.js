@@ -6,10 +6,15 @@ class Main {
 		else Laya.init(GameConfig.width, GameConfig.height, Laya["WebGL"]);
 		Laya["Physics"] && Laya["Physics"].enable();
 		Laya["DebugPanel"] && Laya["DebugPanel"].enable();
-		Laya.stage.scaleMode = GameConfig.scaleMode;
+		Laya.init(750, 1624, Laya.WebGL);
+		//适配模式 宽度100%
+		Laya.stage.scaleMode = Laya.Stage.SCALE_FIXED_WIDTH;
+		Laya.stage.alignH = Laya.Stage.ALIGN_CENTER;
+		Laya.stage.alignV = Laya.Stage.ALIGN_MIDDLE;
+		// Laya.stage.scaleMode = GameConfig.scaleMode;
 		Laya.stage.screenMode = GameConfig.screenMode;
-		Laya.stage.alignV = GameConfig.alignV;
-		Laya.stage.alignH = GameConfig.alignH;
+		// Laya.stage.alignV = GameConfig.alignV;
+		// Laya.stage.alignH = GameConfig.alignH;
 		//兼容微信不支持加载scene后缀场景
 		Laya.URL.exportSceneToJson = GameConfig.exportSceneToJson;
 
