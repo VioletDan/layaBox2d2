@@ -29,7 +29,7 @@ export default class TestPaopao extends Laya.Scene {
             for (var j = 0; j < this.ballRow; j++) {
                 let item = new GameItem();
                 item.pos(j * this.ballH + j * this.distanceNum, i * this.ballH + i * this.distanceNum)
-                // item.setTexturen('testBox2d/b1.png')
+                item.setTexturen('testBox2d/b1.png')
                 this.ballContent.addChild(item);
             }
         }
